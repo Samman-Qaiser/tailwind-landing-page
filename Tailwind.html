@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <title>Tailwind css</title>
+  </head>
+
+  <body>
+    <div
+      class="bg-white px-9 py-8 w-full h-[15vh] box-border flex justify-between align-center"
+    >
+      <svg
+        width="250"
+        height="37"
+        viewBox="0 0 250 37"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        class="prose-charcoal -ml-1 xxs:w-[138px] lg:w-[190px] xl:w-[250px]"
+      >
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M122.197 20.5899C122.623 21.416 122.88 22.3287 122.88 23.3042C122.88 26.8146 119.798 29.6601 115.995 29.6601C112.192 29.6601 109.109 26.8146 109.109 23.3042C109.109 19.7937 112.192 16.9482 115.995 16.9482C116.076 16.9482 116.155 16.9522 116.235 16.9561C116.302 16.9585 116.369 16.9609 116.435 16.9648C116.796 16.9897 117.146 17.0415 117.487 17.1169V20.5899H122.197ZM115.864 15.0191C115.842 15.0139 115.819 15.0075 115.799 15.0075C113.259 15.0075 111.201 13.1618 111.201 10.886C111.201 8.60928 113.259 6.76365 115.799 6.76365C117.196 6.76365 118.443 7.3246 119.285 8.20672L122.676 3.41119C120.844 1.94567 118.451 1.05754 115.833 1.05754C110.07 1.05754 105.398 5.35105 105.398 10.6474C105.398 12.2617 105.833 13.7825 106.6 15.1173C104.235 17.3318 102.753 20.3788 102.753 23.7685C102.753 30.532 108.574 36.0151 115.754 36.0151C122.936 36.0151 128.757 30.532 128.757 23.7685C128.757 22.8162 128.618 21.8988 128.392 21.0127H130.295V15.0191H117.003H115.864ZM199.618 10.574C197.29 10.574 194.614 11.3462 193.029 13.182V0H186.439V34.9576H193.029V21.0035C193.177 18.3967 194.812 16.3685 197.587 16.3685C200.758 16.3685 202.096 18.4446 202.096 21.1001V34.9576H208.685V19.9893C208.685 14.7746 205.812 10.574 199.618 10.574ZM179.405 4.23535H173.446V7.62956C173.446 9.79407 172.254 11.4672 169.672 11.4672H168.431V17.272H172.85V28.5371C172.85 33.2111 175.83 36.015 180.596 36.015C182.533 36.015 183.725 35.6705 184.32 35.4244V30.0133C183.973 30.1114 183.079 30.2098 182.285 30.2098C180.398 30.2098 179.405 29.5215 179.405 27.4058V17.272H184.32V11.4672H179.405V4.23535ZM216.101 20.128C216.245 18.1627 218.075 15.8907 221.397 15.8907C225.057 15.8907 226.598 17.9879 226.694 20.128H216.101ZM221.374 10.5918C215.32 10.5918 209.746 15.5606 209.746 23.2062C209.746 31.2912 215.464 36.0155 221.951 36.0155C227.766 36.0155 231.514 32.5574 232.715 28.4178L227.381 26.8105C226.612 28.9534 224.979 30.4636 221.999 30.4636C218.828 30.4636 216.185 28.1737 216.041 25.0084H232.955C232.955 24.9113 233.051 23.9367 233.051 23.0113C233.051 15.3169 228.679 10.5918 221.374 10.5918ZM248.469 10.5918C246.392 10.5918 243.03 11.1816 241.547 14.3746V10.7884H235.17V34.9562H241.745V23.9034C241.745 18.6969 244.661 17.0762 248.023 17.0762C248.617 17.0762 249.259 17.1253 250 17.2728V10.6901C249.506 10.6409 249.012 10.5918 248.469 10.5918ZM150.399 29.6615C145.187 29.6615 139.83 25.9094 139.83 18.009C139.83 10.109 145.187 6.35645 150.399 6.35645C155.66 6.35645 161.016 10.109 161.016 18.009C161.016 25.9094 155.66 29.6615 150.399 29.6615ZM150.4 0C141.472 0 133.475 6.87204 133.475 18.0324C133.475 29.1445 141.472 36.0169 150.4 36.0169C159.375 36.0169 167.373 29.1445 167.373 18.0324C167.373 6.87204 159.375 0 150.4 0ZM0 34.9576H24.3644V28.5477H6.80042V20.4613H22.9349V14.3968H6.80042V6.4099H24.3644V0H0V34.9576ZM38.7125 29.6618C35.2742 29.6618 32.8389 26.9078 32.8389 22.6814C32.8389 18.4071 35.322 15.8906 38.7125 15.8906C42.0557 15.8906 44.4914 18.4071 44.4914 22.6814C44.4914 26.9545 42.0083 29.6618 38.7125 29.6618ZM50.656 11.2758H44.5056V14.2586C43.9331 12.8893 41.9788 10.5918 37.7823 10.5918C30.9644 10.5918 26.4824 16.1647 26.4824 23.2056C26.4824 30.4907 31.0598 36.0155 37.9731 36.0155C41.1201 36.0155 43.5519 34.3523 44.5533 32.0544V32.3483C44.5533 33.5215 44.696 34.7926 44.7914 35.3307H50.8468C50.7991 34.7926 50.656 33.131 50.656 30.9786V11.2758ZM91.5702 10.5747C89.2416 10.5747 86.5659 11.3472 84.9809 13.1818V0H78.3907V34.9576H84.9809V21.004C85.1292 18.3969 86.7638 16.3687 89.5382 16.3687C92.7091 16.3687 94.0471 18.4452 94.0471 21.1003V34.9576H100.636V19.9895C100.636 14.7753 97.7634 10.5747 91.5702 10.5747ZM65.3098 30.0735C62.0688 30.0735 59.3047 27.6381 59.3047 23.3039C59.3047 18.9692 62.0211 16.5825 65.2621 16.5825C68.4073 16.5825 69.8847 18.6276 70.4566 20.6252L76.1283 18.6764C75.1277 14.6345 71.5052 10.5918 65.119 10.5918C58.3033 10.5918 52.9658 15.9007 52.9658 23.3039C52.9658 30.6579 58.3987 36.0155 65.3098 36.0155C71.5529 36.0155 75.2226 31.9249 76.2709 27.9305L70.695 26.0312C70.1704 27.8818 68.5504 30.0735 65.3098 30.0735Z"
+          fill="currentColor"
+        ></path>
+      </svg>
+      <nav class="flex justify-between w-1/2 cursor-pointer">
+        <h1
+          class="text-slate-700 uppercase text-xl font-mono duration-200 hover:text-zinc-900 hover:font-bold"
+        >
+          services
+        </h1>
+        <h1
+          class="text-slate-700 uppercase text-xl font-mono duration-200 hover:text-zinc-900 hover:font-bold"
+        >
+          About us
+        </h1>
+        <h1
+          class="text-slate-700 uppercase text-xl font-mono duration-200 hover:text-zinc-900 hover:font-bold"
+        >
+          views & news
+        </h1>
+        <h1
+          class="text-slate-700 uppercase text-xl font-mono duration-200 hover:text-zinc-900 hover:font-bold"
+        >
+          ui/ux
+        </h1>
+        <h1
+          class="text-slate-700 uppercase text-xl font-mono duration-200 hover:text-zinc-900 hover:font-bold"
+        >
+          partners
+        </h1>
+      </nav>
+    </div>
+    <div class="bg-white w-full h-screen flex px-12 py-6 flex-col">
+      <ul class="w-1/3 flex justify-between">
+        <li class="text-pink-500 text-xl font-semibold">A</li>
+        <li class="text-pink-500 font-semibold text-xl">GLOBAL</li>
+        <li class="text-pink-500 font-semibold text-xl">PRODUCT</li>
+        <li class="text-pink-500 font-semibold text-xl">UI</li>
+        <li class="text-pink-500 font-semibold text-xl">COMPANY</li>
+      </ul>
+
+      <div>
+        <h1 class="font-extrabold text-[6vw] text-zinc-800 leading-tight">
+          Competitive<br />
+          advantage<br />
+
+          by <span class="text-pink-500">design.</span>
+        </h1>
+        <p class="text-2xl py-5">
+          We help companies transform their customer
+          <span class="text-pink-500 font-semibold">experience</span>.
+        </p>
+        <p class="text-2xl my-5">
+          We design products and services that focus on user needs,<br />
+
+          and make complex systems
+          <span class="text-pink-500 font-semibold">
+            brilliantly easy to use.</span
+          >.
+        </p>
+      </div>
+    </div>
+    <div
+      class="w-full h-[15vh] bg-white flex box-border py-3 px-12 justify-between"
+    >
+      <img
+        class="w-[10%]"
+        src="https://cdn.sanity.io/images/ppwzgrza/production/a22cba23260fe3080a4e5e791cee2b286b6c3333-177x50.svg"
+        alt=""
+        srcset=""
+      />
+      <img
+        class="w-[10%]"
+        src="https://cdn.sanity.io/images/ppwzgrza/production/c55907ceb826e47f1e9f4c86c3829200108fc875-177x50.svg"
+        alt=""
+        srcset=""
+      />
+      <img
+        class="w-[10%]"
+        src="https://cdn.sanity.io/images/ppwzgrza/production/4bca1b112293f7abd231d86a0c339d42796d8d85-177x51.svg"
+        alt=""
+        srcset=""
+      />
+      <img
+        class="w-[10%]"
+        src="https://cdn.sanity.io/images/ppwzgrza/production/1e7ebf994f6377653a8dd96a802a5126b6bf187e-177x50.svg"
+        alt=""
+        srcset=""
+      />
+      <img
+        class="w-[10%]"
+        src="https://cdn.sanity.io/images/ppwzgrza/production/58959aa03d2979c7e8b5ccec49cbf771dc29e4da-178x41.svg"
+        alt=""
+        srcset=""
+      />
+      <img
+        class="w-[10%]"
+        src="https://cdn.sanity.io/images/ppwzgrza/production/4749aacb75fed3395963e05ed581df2b14392fb7-178x50.svg"
+        alt=""
+        srcset=""
+      />
+    </div>
+    <div class="w-full h-screen flex align-center justify-center mt-[30vh]">
+      <div class="w-1/2 h-[90%] relative bg-white">
+        <img
+          class="absolute left-[-20%] bottom-[70%] -z-10"
+          src="https://cdn.sanity.io/images/ppwzgrza/production/e0aeb48c6d9549371ac40f715ce872f784933a05-190x190.svg"
+          alt=""
+          srcset=""
+        />
+        <h1
+          class="text-zinc-900 text-[4vw] font-bold leading-tight bg-white z-10"
+        >
+          Competitive advantage is all about getting the
+          <span class="text-pink-400">last 10% right.</span>
+        </h1>
+        <p class="text-zinc-700 text-2xl">
+          The best technology, the best feature set, and the best business
+          model, will get you 90% of the way to the top. But to beat the
+          competition – to get that last 10% – you need to deliver the right
+          customer experience.
+        </p>
+        <p class="mt-9">
+          We help companies increase customer satisfaction, enhance brand
+          reputation, unlock new sources of value, boost market position, and
+          ultimately drive revenue growth. How?
+        </p>
+        <p class="mt-9 bg-white">
+          By helping you create products that fit your customers' needs.
+        </p>
+
+        <p class="mt-5 bg-white">
+          A User Centred approach to product and service development gives you
+          four kinds of competitive advantage?
+        </p>
+
+        <img
+          class="absolute right-[-20%] bottom-[-10%] -z-10"
+          src="https://cdn.sanity.io/images/ppwzgrza/production/e0aeb48c6d9549371ac40f715ce872f784933a05-190x190.svg"
+          alt=""
+          srcset=""
+        />
+      </div>
+    </div>
+
+    <div
+      class="w-full h-[50vh] bg-white flex justify-between border-box px-[2vw] py-[5vh]"
+    >
+      <div class="w[15%] h-[100%] mx-4 gap-x-8">
+        <img
+          class="w[20vw]"
+          src="https://cdn.sanity.io/images/ppwzgrza/production/f3ffbc80871f53b619e64fa5c6d07b39f0aa6121-80x80.svg"
+          alt=""
+          srcset=""
+        />
+        <h1 class="text-2xl font-bold">
+          1. Functional<br />
+          Advantage
+        </h1>
+        <p class="text-[1.1rem] text-zinc-700">
+          Better functionality, that's easier to use,that fits a market
+          perfectly.
+        </p>
+      </div>
+      <div class="w[20%] h-[100%] mx-4">
+        <img
+          src="https://cdn.sanity.io/images/ppwzgrza/production/15005fcf038493e727077db3b662434f8f27162a-80x80.svg"
+          alt=""
+          srcset=""
+        />
+        <h1 class="text-2xl font-bold">
+          2.Strategic<br />
+          Advantage
+        </h1>
+        <p class="text-[1.1rem] text-zinc-700">
+          Better functionality, that's easier to use, that fits a market
+          perfectly.
+        </p>
+      </div>
+      <div class="w[20%] h-[100%] mx-4">
+        <img
+          src="https://cdn.sanity.io/images/ppwzgrza/production/0aa5111881bd6143d56e92ca90aaea157f34a97f-80x80.svg"
+          alt=""
+          srcset=""
+        />
+        <h1 class="text-2xl font-bold">
+          3.Aesthtic <br />
+          Advantage
+        </h1>
+        <p class="text-[1.1rem] text-zinc-700">
+          Better functionality, that's easier to use, that fits a market
+          perfectly.
+        </p>
+      </div>
+      <div class="w[20%] h-[100%] mx-4">
+        <img
+          src="https://cdn.sanity.io/images/ppwzgrza/production/ffe7735d949137af19bccef6553b5934163d722b-80x80.svg"
+          alt=""
+          srcset=""
+        />
+        <h1 class="text-2xl font-bold">
+          4. Innovation <br />
+          Advantage
+        </h1>
+        <p class="text-[1.1rem] text-zinc-700">
+          Better functionality, that's easier to use, that fits a market
+          perfectly.
+        </p>
+      </div>
+    </div>
+    <div class="w-full h-[60vh] bg-pink-500 px-[4vw] py-[5vh]">
+      <h1 class="font-bold text-[3vw]">
+        Let's uncover what Competitive Advantage means for your organisation
+      </h1>
+      <div
+        class="bg-zinc-900 text-white text-xl font-bold p-4 w-1/2 mt-4 flex align-center justify-evenly cursor-pointer hover:bg-pink-500 hover:text-zinc-900"
+      >
+        <h1>lets create something great together</h1>
+        <i class="ri-arrow-right-line"></i>
+      </div>
+    </div>
+    <div class="w-full h-[90vh] px-24 py-8 flex">
+      <div class="w-[50%]">
+        <p class="font-mono">Trusted by world-class businesses–</p>
+        <h1 class="text-zinc-900 text-[4vw] font-bold leading-tight mt-4">
+          Global reach <br />
+          across industries <br />
+          <span class="text-pink-400">& sectors.</span>
+        </h1>
+        <p class="text-2xl w-[80%] text-zinc-600 mt-9">
+          Our team have 20+ years delivering projects on a global stage. Because
+          of that experience, the world’s most exciting and progressive
+          companies trust us to solve their most complex customer challenges.
+        </p>
+      </div>
+      <div class="w-[50%] flex">
+        <div class="w-[50%]">
+          <img
+            class="w-[100%]"
+            src="https://www.eachandother.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fppwzgrza%2Fproduction%2Fa448afbb3aa44d10dff753d5cb345be7673f4cb4-624x500.png%3Fw%3D624%26h%3D500%26q%3D85%26auto%3Dformat&w=1920&q=85"
+            alt=""
+            srcset=""
+          />
+          <span class="text-pink-400 font-mono"
+            >STRATEGIC CUSTOMER INSIGHT</span
+          >
+          <p>
+            Strategic research partner for acquisition teams in EMEA, USA, South
+            America, and APAC
+          </p>
+        </div>
+        <div class="w-[50%]">
+          <img
+            src="https://www.eachandother.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fppwzgrza%2Fproduction%2F40e10c86cad03e26e63d27594d900faefcf28e09-624x500.png%3Fw%3D624%26h%3D500%26q%3D85%26auto%3Dformat&w=1920&q=85"
+            alt=""
+            srcset=""
+          />
+          <span class="text-blue-400 font-mono"
+            >STRATEGIC CUSTOMER INSIGHT</span
+          >
+          <p>
+            Strategic research partner for acquisition teams in EMEA, USA, South
+            America, and APAC
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="w-full h-screen flex justify-between">
+      <div class="w-1/4 h-full"></div>
+      <div class="w-1/4 h-full">
+        <img
+          src="https://www.eachandother.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fppwzgrza%2Fproduction%2F5a73c77a056474b7c8a23aad9627f0f46af9468d-624x500.png%3Fw%3D624%26h%3D500%26q%3D85%26auto%3Dformat&w=1920&q=85"
+          alt=""
+          srcset=""
+        />
+        <span class="text-green-400 font-mono">STRATEGIC CUSTOMER INSIGHT</span
+        ><img
+          class="w-[60%] m-5"
+          src="https://cdn.sanity.io/images/ppwzgrza/production/1be42cce77781550851b364166a18f38a8c2394b-200x43.svg"
+          alt=""
+          srcset=""
+        />
+        <p class="w-[90%]">
+          A complete revision of complex global processes, orientated around the
+          customer experience
+        </p>
+      </div>
+      <div class="w-1/4 h-full">
+        <img
+          src="https://www.eachandother.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fppwzgrza%2Fproduction%2F6f30df10cddd9ba70655e7256a3772a373452862-624x500.png%3Fw%3D624%26h%3D500%26q%3D85%26auto%3Dformat&w=1920&q=85"
+          alt=""
+          srcset=""
+        />
+        <span class="text-blue-400 font-mono">STRATEGIC CUSTOMER INSIGHT</span
+        ><img
+          class="w-[60%] m-5"
+          src="https://cdn.sanity.io/images/ppwzgrza/production/1be42cce77781550851b364166a18f38a8c2394b-200x43.svg"
+          alt=""
+          srcset=""
+        />
+        <p class="w-[90%]">
+          A complete revision of complex global processes, orientated around the
+          customer experience
+        </p>
+      </div>
+      <div class="w-1/4 h-full">
+        <img
+          src="https://www.eachandother.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fppwzgrza%2Fproduction%2F7ea6e606ab8b9d225d5268cd22393ddfa4fbc348-624x500.png%3Fw%3D624%26h%3D500%26q%3D85%26auto%3Dformat&w=1920&q=85"
+          alt=""
+          srcset=""
+        />
+        <span class="text-pink-400 font-mono">STRATEGIC CUSTOMER INSIGHT</span
+        ><img
+          class="w-[60%] m-5"
+          src="https://cdn.sanity.io/images/ppwzgrza/production/1be42cce77781550851b364166a18f38a8c2394b-200x43.svg"
+          alt=""
+          srcset=""
+        />
+        <p class="w-[90%]">
+          A complete revision of complex global processes, orientated around the
+          customer experience
+        </p>
+      </div>
+    </div>
+    <div class="w-full h-[70vh] flex justify-between px-16">
+      <div class="w-1/4 h-full relative cursor-pointer">
+        <img
+          class="z-0 absolute top-[-25%] left-0"
+          src="https://cdn.sanity.io/images/ppwzgrza/production/38430003157b7bced451cbd685ce310bcf1c3e70-381x310.svg"
+          alt=""
+          srcset=""
+        />
+        <p
+          class="text-3xl font-bold bg-white z-10 w-[70%] hover:underline decoration-black decoration-solid decoration-2"
+        >
+          Design for thinking about digital health care
+        </p>
+        <p class="font-mono hover:text-pink-500 mt-8 cursor-pointer">
+          Read more
+        </p>
+      </div>
+      <div class="w-1/4 h-full relative cursor-pointer">
+        <img
+          class="z-0 absolute top-[-15%] left-0"
+          src="https://cdn.sanity.io/images/ppwzgrza/production/43eeb02089ae8e002b61a40daefa5e6d41d75a6a-395x382.svg"
+          alt=""
+          srcset=""
+        />
+        <p
+          class="text-3xl font-bold bg-white z-10 w-[70%] hover:underline decoration-black decoration-solid decoration-2"
+        >
+          Design for thinking about digital health care
+        </p>
+        <p class="font-mono hover:text-pink-500 mt-8 cursor-pointer">
+          Read more
+        </p>
+      </div>
+      <div class="w-1/4 h-full relative cursor-pointer">
+        <img
+          class="z-0 absolute top-[-15%] left-0"
+          src="https://cdn.sanity.io/images/ppwzgrza/production/42c8b2ef62366058458ba7e42b94b97a00d0a39d-381x310.svg"
+          alt=""
+          srcset=""
+        />
+        <p
+          class="text-3xl font-bold bg-white z-10 w-[70%] hover:underline decoration-black decoration-solid decoration-2"
+        >
+          Design for thinking about digital health care
+        </p>
+        <p class="font-mono hover:text-pink-500 mt-8 cursor-pointer">
+          Read more
+        </p>
+      </div>
+    </div>
+    <div class="w-full h-screen bg-zinc-700 flex flex-col gap-40">
+      <div class="w-full h-1/2 flex align-center justify-between p-20">
+        <div class="w-1/4 h-full">
+          <svg width="62" height="80" viewBox="0 0 62 80" class="prose-pink md:w-[62px] md:h-[80px] xxs:w-[42px] xxs-:h-[54px]" fill="none" xmlns="http://www.w3.org/2000/svg"><path id="Intro/Ampersand Logo" fill-rule="evenodd" clip-rule="evenodd" d="M28.9996 66C20.7166 66 14 59.5085 14 51.5C14 43.4915 20.7166 37 28.9996 37C29.1756 37 29.3498 37.009 29.5232 37.018C29.669 37.0234 29.8139 37.0288 29.9588 37.0379C30.7438 37.0946 31.5075 37.2127 32.2516 37.3849V45.3077H42.5109C43.4381 47.1925 44 49.2746 44 51.5C44 59.5085 37.2834 66 28.9996 66ZM62 31.9508H32.077H29.5146C29.4644 31.9389 29.4143 31.9233 29.3678 31.9233C23.6503 31.9233 19.0176 27.7005 19.0176 22.4922C19.0176 17.2812 23.6503 13.0584 29.3678 13.0584C32.5119 13.0584 35.3187 14.3412 37.2148 16.3599L44.8484 5.38539C40.7253 2.03248 35.3396 0 29.4435 0C16.4715 0 5.95451 9.82566 5.95451 21.9453C5.95451 25.6405 6.93265 29.1209 8.66011 32.1756C3.33642 37.2426 0 44.2164 0 51.9738C0 67.4509 13.105 80 29.2684 80C45.4328 80 58.5369 67.4509 58.5369 51.9738C58.5369 49.7945 58.2251 47.6941 57.7146 45.6671H62V31.9508Z" fill="hotpink"></path></svg>
+          <p class="text-pink-600 py-6">hello@eachandother.com</p>
+          <ul class="text-white ">
+            <li class="hover:text-pink-400 cursor-pointer leading-6">About us</li>
+            <li class="hover:text-pink-400 cursor-pointer leading-6">Our Team</li>
+            <li class="hover:text-pink-400 cursor-pointer leading-6">Education & Community</li>
+            <li class="hover:text-pink-400 cursor-pointer leading-6">Partners</li>
+            <li class="hover:text-pink-400 cursor-pointer leading-6">Careers</li>
+          </ul>
+        </div>
+        <div class="w-1/4 h-full">
+          <h1 class="text-2xl text-white font-bold uppercase">SERVICES</h1>
+          <ul class="text-white font-mono">
+            <li class="hover:text-pink-400 cursor-pointer leading-10">About us</li>
+            <li class="hover:text-pink-400 cursor-pointer leading-10">Our Team</li>
+            <li class="hover:text-pink-400 cursor-pointer leading-10">Education & Community</li>
+            <li class="hover:text-pink-400 cursor-pointer leading-10">Partners</li>
+            <li class="hover:text-pink-400 cursor-pointer leading-10">Careers</li>
+          </ul>
+        </div>
+        <div class="w-1/4 h-full">
+          <h1 class="text-2xl text-white font-bold uppercase">about us</h1>
+          <ul class="text-white font-mono">
+            <li class="hover:text-pink-400 cursor-pointer leading-10 ">About us</li>
+            <li class="hover:text-pink-400 cursor-pointer leading-10">Our Team</li>
+            <li class="hover:text-pink-400 cursor-pointer leading-10">Education & Community</li>
+            <li class="hover:text-pink-400 cursor-pointer leading-10">Partners</li>
+            <li class="hover:text-pink-400 cursor-pointer leading-10">Careers</li>
+          </ul leading-10>
+        </div>
+        <div class="w-1/4 h-full">
+          <h1 class="text-2xl text-white font-bold uppercase">
+            news and views
+          </h1>
+          <ul class="text-white font-mono">
+            <li class="hover:text-pink-400 cursor-pointer leading-10 ">About us</li>
+            <li class="hover:text-pink-400 cursor-pointer leading-10">Our Team</li>
+            <li class="hover:text-pink-400 cursor-pointer leading-10">Education & Community</li>
+            <li class="hover:text-pink-400 cursor-pointer leading-10">Partners</li>
+            <li class="hover:text-pink-400 cursor-pointer leading-10">Careers</li>
+          </ul leading-10>
+        </div>
+      </div>
+      <div class="w-full h-1/4 justify-between align-middle flex px-28 text-white ">
+        <p class="w-1/3 text-xl">Copyright © 2024 Each&Other Ltd.
+
+          Registered in Ireland. No. 545982</p>
+          <svg
+          width="250"
+          height="37"
+          viewBox="0 0 250 37"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          class="prose-charcoal -ml-1 xxs:w-[138px] lg:w-[190px] xl:w-[250px]"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M122.197 20.5899C122.623 21.416 122.88 22.3287 122.88 23.3042C122.88 26.8146 119.798 29.6601 115.995 29.6601C112.192 29.6601 109.109 26.8146 109.109 23.3042C109.109 19.7937 112.192 16.9482 115.995 16.9482C116.076 16.9482 116.155 16.9522 116.235 16.9561C116.302 16.9585 116.369 16.9609 116.435 16.9648C116.796 16.9897 117.146 17.0415 117.487 17.1169V20.5899H122.197ZM115.864 15.0191C115.842 15.0139 115.819 15.0075 115.799 15.0075C113.259 15.0075 111.201 13.1618 111.201 10.886C111.201 8.60928 113.259 6.76365 115.799 6.76365C117.196 6.76365 118.443 7.3246 119.285 8.20672L122.676 3.41119C120.844 1.94567 118.451 1.05754 115.833 1.05754C110.07 1.05754 105.398 5.35105 105.398 10.6474C105.398 12.2617 105.833 13.7825 106.6 15.1173C104.235 17.3318 102.753 20.3788 102.753 23.7685C102.753 30.532 108.574 36.0151 115.754 36.0151C122.936 36.0151 128.757 30.532 128.757 23.7685C128.757 22.8162 128.618 21.8988 128.392 21.0127H130.295V15.0191H117.003H115.864ZM199.618 10.574C197.29 10.574 194.614 11.3462 193.029 13.182V0H186.439V34.9576H193.029V21.0035C193.177 18.3967 194.812 16.3685 197.587 16.3685C200.758 16.3685 202.096 18.4446 202.096 21.1001V34.9576H208.685V19.9893C208.685 14.7746 205.812 10.574 199.618 10.574ZM179.405 4.23535H173.446V7.62956C173.446 9.79407 172.254 11.4672 169.672 11.4672H168.431V17.272H172.85V28.5371C172.85 33.2111 175.83 36.015 180.596 36.015C182.533 36.015 183.725 35.6705 184.32 35.4244V30.0133C183.973 30.1114 183.079 30.2098 182.285 30.2098C180.398 30.2098 179.405 29.5215 179.405 27.4058V17.272H184.32V11.4672H179.405V4.23535ZM216.101 20.128C216.245 18.1627 218.075 15.8907 221.397 15.8907C225.057 15.8907 226.598 17.9879 226.694 20.128H216.101ZM221.374 10.5918C215.32 10.5918 209.746 15.5606 209.746 23.2062C209.746 31.2912 215.464 36.0155 221.951 36.0155C227.766 36.0155 231.514 32.5574 232.715 28.4178L227.381 26.8105C226.612 28.9534 224.979 30.4636 221.999 30.4636C218.828 30.4636 216.185 28.1737 216.041 25.0084H232.955C232.955 24.9113 233.051 23.9367 233.051 23.0113C233.051 15.3169 228.679 10.5918 221.374 10.5918ZM248.469 10.5918C246.392 10.5918 243.03 11.1816 241.547 14.3746V10.7884H235.17V34.9562H241.745V23.9034C241.745 18.6969 244.661 17.0762 248.023 17.0762C248.617 17.0762 249.259 17.1253 250 17.2728V10.6901C249.506 10.6409 249.012 10.5918 248.469 10.5918ZM150.399 29.6615C145.187 29.6615 139.83 25.9094 139.83 18.009C139.83 10.109 145.187 6.35645 150.399 6.35645C155.66 6.35645 161.016 10.109 161.016 18.009C161.016 25.9094 155.66 29.6615 150.399 29.6615ZM150.4 0C141.472 0 133.475 6.87204 133.475 18.0324C133.475 29.1445 141.472 36.0169 150.4 36.0169C159.375 36.0169 167.373 29.1445 167.373 18.0324C167.373 6.87204 159.375 0 150.4 0ZM0 34.9576H24.3644V28.5477H6.80042V20.4613H22.9349V14.3968H6.80042V6.4099H24.3644V0H0V34.9576ZM38.7125 29.6618C35.2742 29.6618 32.8389 26.9078 32.8389 22.6814C32.8389 18.4071 35.322 15.8906 38.7125 15.8906C42.0557 15.8906 44.4914 18.4071 44.4914 22.6814C44.4914 26.9545 42.0083 29.6618 38.7125 29.6618ZM50.656 11.2758H44.5056V14.2586C43.9331 12.8893 41.9788 10.5918 37.7823 10.5918C30.9644 10.5918 26.4824 16.1647 26.4824 23.2056C26.4824 30.4907 31.0598 36.0155 37.9731 36.0155C41.1201 36.0155 43.5519 34.3523 44.5533 32.0544V32.3483C44.5533 33.5215 44.696 34.7926 44.7914 35.3307H50.8468C50.7991 34.7926 50.656 33.131 50.656 30.9786V11.2758ZM91.5702 10.5747C89.2416 10.5747 86.5659 11.3472 84.9809 13.1818V0H78.3907V34.9576H84.9809V21.004C85.1292 18.3969 86.7638 16.3687 89.5382 16.3687C92.7091 16.3687 94.0471 18.4452 94.0471 21.1003V34.9576H100.636V19.9895C100.636 14.7753 97.7634 10.5747 91.5702 10.5747ZM65.3098 30.0735C62.0688 30.0735 59.3047 27.6381 59.3047 23.3039C59.3047 18.9692 62.0211 16.5825 65.2621 16.5825C68.4073 16.5825 69.8847 18.6276 70.4566 20.6252L76.1283 18.6764C75.1277 14.6345 71.5052 10.5918 65.119 10.5918C58.3033 10.5918 52.9658 15.9007 52.9658 23.3039C52.9658 30.6579 58.3987 36.0155 65.3098 36.0155C71.5529 36.0155 75.2226 31.9249 76.2709 27.9305L70.695 26.0312C70.1704 27.8818 68.5504 30.0735 65.3098 30.0735Z"
+            fill="hotpink"
+          ></path>
+        </svg>
+      </div>
+    </div>
+  </body>
+</html>
